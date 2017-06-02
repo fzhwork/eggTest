@@ -15,12 +15,23 @@ module.exports = appInfo => {
         serverUrl: 'https://hacker-news.firebaseio.com/v0',
     };
     config.middleware = [
-        'robot'
+        'robot',
     ];
     config.robot = {
         ua: [
             /Baiduspider/i,
-        ]
+        ],
+    };
+    config.mysql = {
+        client: {
+            host: 'localhost',
+            port: '3306',
+            user: 'root',
+            password: 'So456789',
+            database: 'test',
+        },
+        app: true,
+        agent: false,
     };
     // add your config here
 
