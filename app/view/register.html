@@ -60,7 +60,7 @@ Author URI: http://www.deathghost.cn
     </header>
     <!--Start content-->
     <section class="Psection MT20">
-        <form action="/userReg" method="get">
+        <form action="/userReg" method="post">
             <table class="Register">
                 <tr>
                     <td width="40%" align="right" class="FontW">用户名：</td>
@@ -86,7 +86,7 @@ Author URI: http://www.deathghost.cn
                         <input type="email" name="email" required>
                     </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td width="40%" align="right" class="FontW">手机号码：</td>
                     <td>
                         <input type="text" name="tel" required pattern="[0-9]{11}">
@@ -102,7 +102,7 @@ Author URI: http://www.deathghost.cn
                     <td width="40%" align="right" class="FontW">验证码：</td>
                     <td>
                         <input type="text" name="" required><img src="/public/upload/captcha.png" style="margin-left:8px; vertical-align:bottom" width="83" height="36"></td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td width="40%" align="right"></td>
                     <td>
@@ -124,8 +124,8 @@ Author URI: http://www.deathghost.cn
             <aside>
                 <div class="ewm-left">
                     <p>手机扫描二维码：</p>
-                    <img src="images/Android_ico_d.gif">
-                    <img src="images/iphone_ico_d.gif">
+                    <img src="/public/images/Android_ico_d.gif">
+                    <img src="/public/images/iphone_ico_d.gif">
                 </div>
                 <div class="tips">
                     <p>客服热线</p>
